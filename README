@@ -1,0 +1,27 @@
+Course: CS-131-Artificial Intelligence
+Assignment: ANN
+Name: Yige Sun
+
+I test this program(main.py) in pycharm.
+To run the program(main.py), make sure it's in the same folder with ANN - Iris data.txt.
+
+When running the program, first you will be asked to tune parameters just follow the instruction.
+
+Parameters:
+	BIAS: The bias in ANN
+	LEARNING_RATE: The learning rate in ANN
+	VISIBLE: If you input 'n', the training steps won't be shown; if you input 'y', training steps will be showed.
+
+Topology and Rules of My ANN:
+
+There are three layers: input layer, hidden layer and output layer. Since we have 4 attributes, I simply set the size of input layer as 4. For the size of hidden layer, I tried from 1 to 9 and found 8 works best. The size of output layer would be equal to the number of label which is 3.
+
+Since the weights between neurons and bias, neurons and neurons are randomly generated, the overall accuracy may change when restart the ANN.
+
+Like the activation function talked in lecture, I used sigmoid function in ANN. Besides, I de-correlate data attributes via a value normalization method: Variance.
+
+The bias and learning rate could be changed, but during my test, the best value for bias is 1 and best learning rate is 0.1.
+
+Since, I think the data set we have is not too large, I use 60% of them as the training data, 20% as validation data, and 20% as testing data.
+
+The max iteration is set to 1000 and the min acceptable MSE is set to 0.001. One of the condition is satisfied, the training step will end.
